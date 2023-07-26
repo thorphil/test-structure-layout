@@ -8,7 +8,7 @@ The main use is to distribute completed structures over a wafer layout and captu
 - Run _generate_probe_contacts.py_ to generate a contact array.
 - Modify the generated GDS file to add the remaining test structure design.
 - Run _generate_layout.py_ to generate a design and a csv file with structure locations.
-- Alternatively, extract structure locations directly from a layout using _extract_coords.py_
+- Alternatively, run _extract_coords.py_ to extract structure locations by directly parsing a GDS layout file. 
 
 The scripts can be configured by adjusting the internal variables as appropriate.
 
