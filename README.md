@@ -16,7 +16,7 @@ The scripts can be configured by adjusting the internal variables as appropriate
 - [NumPy](https://numpy.org)
 
 
-!(/img/layout.png)
-!(/img/layout_zoom.png)
-!(/img/probes_4x2_480um.png)
-!(/img/teststructure.png)
+![](/img/layout.png)
+![](/img/layout_zoom.png)
+![](/img/probes_4x2_480um.png)
+![](/img/teststructure.png)
