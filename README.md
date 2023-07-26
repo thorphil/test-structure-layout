@@ -15,7 +15,7 @@ The scripts can be configured by adjusting the internal variables as appropriate
 - [gdstk](https://github.com/heitzmann/gdstk)
 - [NumPy](https://numpy.org)
 
-## Generate contact an 4 by 2 array with 240$\mu$m contacts on a 480$\mu$m pitch:
+## Generate contact an 4 by 2 array with 240$`\mu`$m contacts on a 480$`\mu`$m pitch:
 ![](/img/resize_probes_4x2_480um.png)
 
 ## Add a design in an external editor:
