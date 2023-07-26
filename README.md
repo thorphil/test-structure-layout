@@ -1,7 +1,7 @@
 # Test structure layout
 Simple scripts to generate a probecard contact pattern and layout over a wafer for automated testing.
 
-The main use is to distribute completed structures over a wafer layout and capture their locations in file that can be supplied to an automated tester.
+The main use is to distribute completed structures over a wafer layout and capture their locations in file that can be supplied to an automated tester or other metrology tool.
 
 ## Example workflow:
 
@@ -26,6 +26,7 @@ The scripts can be configured by adjusting the internal variables as appropriate
 ### Collect the coordinate file for metrology:
 
 ***x,y***
+
 -1.262500000000000000e+02,-4.779000000000000000e+04
 
 -1.186125000000000000e+04,-4.558000000000000000e+04
