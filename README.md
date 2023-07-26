@@ -15,8 +15,26 @@ The scripts can be configured by adjusting the internal variables as appropriate
 - [gdstk](https://github.com/heitzmann/gdstk)
 - [NumPy](https://numpy.org)
 
+Generate contact array:
+![](/img/resize_probes_4x2_480um.png)
+Add rest of design:
+![](/img/resize_teststructure.png)
+Generate the layout:
+![](/img/resize_layout_zoom.png)
+![](/img/resize_layout.png)
+Collect the coordinate file for metrology:
 
-![](/img/probes_4x2_480um.png)
-![](/img/teststructure.png)
-![](/img/layout_zoom.png)
-![](/img/layout.png)
+
+# x,y
+-1.262500000000000000e+02,-4.779000000000000000e+04
+-1.186125000000000000e+04,-4.558000000000000000e+04
+-8.927500000000000000e+03,-4.558000000000000000e+04
+-5.993750000000000000e+03,-4.558000000000000000e+04
+-3.060000000000000000e+03,-4.558000000000000000e+04
+-1.262500000000000000e+02,-4.558000000000000000e+04
+2.807500000000000000e+03,-4.558000000000000000e+04
+5.741250000000000000e+03,-4.558000000000000000e+04
+8.675000000000000000e+03,-4.558000000000000000e+04
+...
+
+
