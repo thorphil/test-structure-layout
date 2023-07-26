@@ -3,17 +3,19 @@ import numpy as np
 import pandas as pd
 import datetime
 
+'''
+This version uses polar magnitude only to decide if a structure's bounding box is within a wafer region.  Additional wafer features such as major and minor flats and notches are not taken into account.
+'''
 
-input_file = 'test_structure.gds'
-input_cell_name = 'probes_4x2_480um'
+input_file = 'probes_4x2_240um.gds'
+input_cell_name = 'probes_4x2_240um'
 output_file = 'layout.gds'
-output_coords = 'layout-coords.csv'
+output_coords = 'layout_coords.csv'
 output_wafer = 100.0#mm
 output_edge_exclusion = 1000.0
 output_spacing = 500.0
 
 include_timestamp = False
-output_layout_cell = 'test_structure'
 
 def timestamp():
     return datetime.datetime.now().strftime("%Y%m%d-%H%M%S")

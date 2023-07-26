@@ -7,9 +7,9 @@ import pandas as pd
 #Probecard parameters
 rows = 2
 cols = 4
-pad_side = 240#micron
+pad_side = 120#micron
 pad_sides = np.array([pad_side,pad_side])
-pitch = 480#micron
+pitch = 240#micron
 gap = pitch-pad_side 
 layer = 0#GDS layer to create the geometry on
 name = 'probes_{cols}x{rows}_{pitch}um'.format(cols=cols,rows=rows,pitch=pitch)
