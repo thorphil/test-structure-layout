@@ -4,15 +4,15 @@ import pandas as pd
 import datetime
 
 
-input_file = 'probes_4x2_200um.gds'
-input_cell_name = 'probes_4x2_200um'
-output_file = 'test_structure.gds'
-output_coords = 'test_structure-coords.csv'
+input_file = 'test_structure.gds'
+input_cell_name = 'probes_4x2_480um'
+output_file = 'layout.gds'
+output_coords = 'layout-coords.csv'
 output_wafer = 100.0#mm
 output_edge_exclusion = 1000.0
 output_spacing = 500.0
 
-include_timestamp = True
+include_timestamp = False
 output_layout_cell = 'test_structure'
 
 def timestamp():
@@ -59,7 +59,7 @@ input_lib = gdstk.read_gds(input_file)
 input_cell = input_lib[input_cell_name]
 output_lib = gdstk.Library()
 top = output_lib.new_cell('Top')
-
+output_lib.add(input_cell)
 coords = populate(input_cell.bounding_box(),wafer=output_wafer,exclusion=output_edge_exclusion,spacing=output_spacing)
 for coord in coords:
     top.add(gdstk.Reference(input_cell,origin=coord))

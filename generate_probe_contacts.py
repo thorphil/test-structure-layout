@@ -7,9 +7,9 @@ import pandas as pd
 #Probecard parameters
 rows = 2
 cols = 4
-pad_side = 100#micron
+pad_side = 240#micron
 pad_sides = np.array([pad_side,pad_side])
-pitch = 200#micron
+pitch = 480#micron
 gap = pitch-pad_side 
 layer = 0#GDS layer to create the geometry on
 name = 'probes_{cols}x{rows}_{pitch}um'.format(cols=cols,rows=rows,pitch=pitch)
@@ -23,8 +23,8 @@ cell = lib.new_cell(name)
 
 
 # Calculate the dimensions of the structure
-width = (pad_side+pitch)*(cols-1)
-height = (pad_side+pitch)*(rows-1)
+width = (pad_side+gap)*(cols-1)
+height = (pad_side+gap)*(rows-1)
 
 # Generate coordinates of each contact
 cx = np.linspace(origin[0]-width/2.0,origin[0]+width/2.0,num=cols)#centre of each pad
