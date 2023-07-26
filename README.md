@@ -13,7 +13,7 @@ The main use is to distribute completed structures over a wafer layout and captu
 The scripts can be configured by adjusting the internal variables as appropriate.
 
 
-### Generate a 4 by 2 array with 240$`\mu`$m contacts on a 480$`\mu`$m pitch:
+### Generate a 4 by 2 array with 120$`\mu`$m contacts on a 240$`\mu`$m pitch:
 ![](/img/resize_probes_4x2_480um.png)
 
 ### Add a design in an external editor:
