@@ -267,7 +267,7 @@ states = [R_0_I_plus,R_0_I_minus,R_90_I_plus,R_90_I_minus,Line_I_plus,Line_I_min
 #     state()
 #     print matrix.query("PT")
 
-f = open('/home/probebench/20191023-crossbridge/20191023-wafer_map.csv','r')#diffed coordinate list
+f = open('20191023-wafer_map.csv','r')#diffed coordinate list
 df = pandas.read_csv(f,names=['index','x','y','w','l','s','t'])
 f.close()
 df['x'] = df['x']*-1.0#not entirely clear why the coordinate system is reversed must be top left based
@@ -280,7 +280,7 @@ structure_names = df.index
 
 structures = zip(structure_names,coords)
 
-out = open('20200124-data.csv','w')
+out = open('data.csv','w')
 out.write(','.join(['structure','x','y','R_0(I+)','R_0(I-)','R_90(I+)','R_90(I-)','L(I+)','L(I-)\n']))
 
 rsh_current = 100#mA
